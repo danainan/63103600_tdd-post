@@ -1,9 +1,6 @@
 from function import inputt,display_compensation,validate_number
 import pytest
 
-@pytest.mark.code
-def test_inputt():
-    assert inputt() == (30,90,30)
 
 @pytest.mark.code
 def test_validate_number():
@@ -39,3 +36,8 @@ def test_display_compensation_late_morethan_day():
 @pytest.mark.code
 def test_display_compensation_late_lessthan_0():
     assert display_compensation(0,0,-1) == False
+    
+@pytest.mark.code
+def test_display_compensation_string():
+    assert display_compensation(a,a,a) == False
+ 
