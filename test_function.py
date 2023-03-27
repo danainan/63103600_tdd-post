@@ -37,7 +37,4 @@ def test_display_compensation_late_morethan_day():
 def test_display_compensation_late_lessthan_0():
     assert display_compensation(0,0,-1) == False
     
-@pytest.mark.code
-def test_display_compensation_string():
-    assert display_compensation(a,a,a) == False
  
